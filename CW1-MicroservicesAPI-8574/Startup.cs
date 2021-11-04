@@ -7,10 +7,13 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CW1_MicroservicesAPI_8574.DBContexts;
+using CW1_MicroservicesAPI_8574.Repository;
 
 namespace CW1_MicroservicesAPI_8574
 {
@@ -26,8 +29,10 @@ namespace CW1_MicroservicesAPI_8574
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-            services.AddControllers();
+            services.AddMvc();
+            services.AddDbContext<ProductContext>(o => o.UseSqlServer(Configuration.GetConnectionString("ProductDB")));
+            services.AddTransient<IProductRepository, ProductRepository>();
+            //services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CW1_MicroservicesAPI_8574", Version = "v1" });
