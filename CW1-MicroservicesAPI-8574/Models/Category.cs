@@ -7,5 +7,8 @@ namespace CW1_MicroservicesAPI_8574.Models
 {
     public class Category
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
     }
 }
