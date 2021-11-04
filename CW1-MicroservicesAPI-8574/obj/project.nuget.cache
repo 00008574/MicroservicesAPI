@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "/JDnJANuh2lQxWdZPKq3cBssgnfebrMMDiFVwjncD3Phg2Exe9mTpCdXo2UJ4L+gy7rcS5dXWKsQ6eMZP4D/nA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\c0mrade\\Desktop\\cloud\\CW1-MicroservicesAPI-8574\\CW1-MicroservicesAPI-8574\\CW1-MicroservicesAPI-8574.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\c0mrade\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\c0mrade\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\c0mrade\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512",
+    "C:\\Users\\c0mrade\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\c0mrade\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\c0mrade\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\c0mrade\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
