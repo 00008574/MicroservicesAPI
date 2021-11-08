@@ -30,7 +30,7 @@ namespace CW1_MicroservicesAPI_8574.Controllers
         }
 
         // GET api/<ProductController>/5
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet("{id}", Name = "GetProduct")]
         public IActionResult Get(int id)
         {
             var product = _productRepository.GetProductById(id);

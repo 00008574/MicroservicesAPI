@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CW1_MicroservicesAPI_8574.Repository
 {
-    public class CategoryRepository : ICategoryRepository
+    public class CategoryRepository
     {
     }
 }
