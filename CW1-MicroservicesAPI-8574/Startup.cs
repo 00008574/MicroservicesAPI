@@ -32,6 +32,7 @@ namespace CW1_MicroservicesAPI_8574
             services.AddMvc();
             services.AddDbContext<ProductContext>(o => o.UseSqlServer(Configuration.GetConnectionString("ProductDB")));
             services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddTransient<ICategoryRepository, CategoryRepository>();
             //services.AddControllers();
             services.AddSwaggerGen(c =>
             {
