@@ -13,7 +13,7 @@ namespace CW1_MicroservicesAPI_8574.Controllers
 {
     [Produces("application/json")]
     [Route("api/Category")]
-    public class CategoryController : ControllerBase
+    public class CategoryController : Controller
     {
         private readonly ICategoryRepository _categoryRepository;
         public CategoryController(ICategoryRepository categoryRepository)
@@ -68,9 +68,9 @@ namespace CW1_MicroservicesAPI_8574.Controllers
 
         // DELETE api/<CategoryController>/5
         [HttpDelete("{id}")]
-        public IActionResult Delete(int Id)
+        public IActionResult Delete(int id)
         {
-            _categoryRepository.DeleteCategory(Id);
+            _categoryRepository.DeleteCategory(id);
             return new OkResult();
         }
     }
